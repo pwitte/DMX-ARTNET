@@ -5,6 +5,30 @@ DMX to Artnet converter, to allow older non-networked Lighting consoles to be vi
 I bought a Avolites Pearl 2000 for very cheap, but commercial Artnet nodes with server mode were too expensive.
 Most of them lacked support to convert existing DMX to artnet, only the other way around because newer consoles can be networked and output pure Artnet.
 
+# Libraries used in ARDUINO IDE
+- ESP32 Arduino core 2.0.17
+- esp_dmx 4.1.0
+- RStephan's "ArtnetWifi"
+    GitHub:
+    https://github.com/rstephan/ArtnetWifi
+- ESPAsyncWebServer
+    GitHub:
+    https://github.com/me-no-dev/ESPAsyncWebServer
+- AsyncTCP
+    GitHub:
+    https://github.com/me-no-dev/AsyncTCP
+- WiFi.h
+    Builtin library
+    Part of the ESP32 Arduino core.
+No installation required.
+
+- Preferences.h
+    Builtin library
+    Used to save config (SSID, universes, direction, etc.) in NVS.
+- WifiUdp.h
+    Builtin library
+    Used for manually sending Art-Net packets as UDP datagrams.
+
 # Default Wi-Fi APs:
 Bridge A: SSID DMX-Bridge-A, password dmx12345
 Bridge B: SSID DMX-Bridge-B, password dmx12345
