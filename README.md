@@ -95,12 +95,12 @@ These safeguards prevent malformed Art-Net packets that could cause errors such 
 the limit of the matrix" in analysis software.
 
 # Quick Wiring Checklist
-• ESP32 and MAX485 share a common ground.
-• MAX485 VCC is powered from a stable 5V supply.
-• DE and RE pins on each MAX485 are tied together and connect to the appropriate EN GPIO.
-• TX/RX pins match DI/RO on each MAX485 (TX → DI, RX ← RO).
-• DMX A/B outputs from MAX485 go to the correct XLR pins (A → Pin 3, B → Pin 2).
-• At least one device on each DMX line has a 120Ω termination resistor; the bridge’s internal termination can be
+    ESP32 and MAX485 share a common ground.
+    MAX485 VCC is powered from a stable 5V supply.
+    DE and RE pins on each MAX485 are tied together and connect to the appropriate EN GPIO.
+    TX/RX pins match DI/RO on each MAX485 (TX → DI, RX ← RO).
+    DMX A/B outputs from MAX485 go to the correct XLR pins (A → Pin 3, B → Pin 2).
+    At least one device on each DMX line has a 120Ω termination resistor; the bridge’s internal termination can be
 toggled in software.
 
 # Common faults after wiring:
