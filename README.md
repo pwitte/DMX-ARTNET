@@ -36,15 +36,16 @@ Bridge B: SSID DMX-Bridge-B, password dmx12345
 # GPIO Wiring and functiona between boards
 GPIO - Role - Connected To - Notes
 
- 17  - DMX1 TX - MAX485 #1 DI
- 16  - DMX1 RX - MAX485 #1 RO
- 21  - DMX1 EN - MAX485 #1 DE+RE DMX1 driver enable
- 32  - DMX1 Termination (optional) Termination circuit Controls 120Ω between A/B
+     17  - DMX1 TX - MAX485 #1 DI
+     16  - DMX1 RX - MAX485 #1 RO
+     21  - DMX1 EN - MAX485 #1 DE+RE DMX1 driver enable
+     32  - DMX1 Termination (optional) Termination circuit Controls 120Ω between A/B
 
- 25  - DMX2 TX - MAX485 #2 DI
- 26  - DMX2 RX - MAX485 #2 RO
- 22  - DMX2 EN - MAX485 #2 DE+RE DMX2 driver enable
- 33  - DMX2 Termination (optional) Termination circuit Controls 120Ω between A/B
+     25  - DMX2 TX - MAX485 #2 DI
+     26  - DMX2 RX - MAX485 #2 RO
+     22  - DMX2 EN - MAX485 #2 DE+RE DMX2 driver enable
+
+     33  - DMX2 Termination (optional) Termination circuit Controls 120Ω between A/B
 
 # ESP32 Pinout for DMX Bridge
 TX and RX lines connect to DI and RO on each MAX485. EN is tied to both DE and RE; setting EN high
